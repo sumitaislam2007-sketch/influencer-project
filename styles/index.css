@@ -26,8 +26,9 @@
     font-family: "Poppins", sans-serif;
     margin: 60px 0px;
  }
- header section{
-    max-width: 1110px;
+ header section,
+ main section{
+    max-width: 1100px;
     margin: 0 auto;
  }
  /* nav style */
@@ -79,6 +80,15 @@
     font-weight: 600;
     margin: 16px auto;
  }
+ /* sponsors container */
+ .sponsors-container{
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   border: 1px solid lightgray;
+   align-items: center;
+   padding: 20px 0px;
+ }
+
 
  /* Media Query for small device */
  @media screen and (max-width: 576px) {
@@ -93,5 +103,13 @@
     }
     .banner{
         flex-direction: column;
+    }
+    .banner-img img{
+       width: 70%;
+       background-position: center;
+    }
+    .sponsors-container{
+      grid-template-columns: repeat(3, 1fr);
+      border: none;
     }
  }
