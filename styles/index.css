@@ -10,7 +10,7 @@
 
  /* mixed style */
  .border{
-    border: 2px solid steelblue;
+    /* border: 2px solid steelblue; */
  }
  .btn-primary{
     color: #FFFFFF;
@@ -106,7 +106,7 @@
    border: none;
    border-radius: 5px;
    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-   width: 329px;
+   max-width: 329px;
    padding:10px 0px 10px 20px;
  }
  /* feature style */
@@ -127,6 +127,29 @@
    color: #6C6C6C;
    margin-top: 16px;
    margin-bottom: 16px;
+ }
+ /* footer style */
+ footer{
+   color: #FFFFFF;
+   background-color: #0A0826;
+   font-weight: 700;
+   height: 250px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+ }
+ .footer-content{
+    text-align: center;
+ }
+ .footer-title{
+   font-size: 1.5rem;
+   font-family: "Poppins", sans-serif;
+ }
+ .footer-description{
+   font-size: 0.875rem;
+   font-family: "Manrope", sans-serif;
+   margin: 8px auto 16px auto;
  }
 
 
@@ -151,5 +174,22 @@
     .sponsors-container{
       grid-template-columns: repeat(3, 1fr);
       border: none;
+      padding: 5px;
+    }
+    .collection-container{
+      grid-template-columns: repeat(1, 1fr);
+      /* margin-left: 20px; */
+    }
+    .collection{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .feature{
+      flex-direction: column-reverse;
+    }
+
+    .feature-content{
+      padding: 10px;
+      text-align: center;
     }
  }
